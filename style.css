@@ -84,7 +84,7 @@ header.topbar{
   display:flex;align-items:center;justify-content:space-between;
   padding:0 32px;
 }
-@media (max-width:860px){header.topbar{margin-left:0;}}
+@media (max-width:860px){header.topbar{margin-left:0;overflow:hidden;}}
 
 .brand{
   font-family:var(--mono);
@@ -114,9 +114,9 @@ header.topbar{
 
 .nav-toggle{display:none;background:none;border:none;color:var(--fg);font-family:var(--mono);font-size:20px;cursor:none;}
 @media (max-width:720px){
-  .tabs{position:fixed;top:61px;left:0;right:0;background:var(--bg);flex-direction:column;
-    border-bottom:1px solid var(--line);display:none;z-index:50;}
-  .tabs.open{display:flex;}
+  .tabs{display:none !important;position:fixed;top:61px;left:0;right:0;background:var(--bg);flex-direction:column;
+    border-bottom:1px solid var(--line);z-index:50;}
+  .tabs.open{display:flex !important;}
   .tabs a{border-right:none;border-bottom:1px solid var(--line);padding:16px 24px;}
   .nav-toggle{display:block;}
 }
