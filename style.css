@@ -115,8 +115,8 @@ header.topbar{
 .nav-toggle{display:none;background:none;border:none;color:var(--fg);font-family:var(--mono);font-size:20px;cursor:none;}
 @media (max-width:720px){
   .tabs{position:fixed;top:61px;left:0;right:0;background:var(--bg);flex-direction:column;
-    border-bottom:1px solid var(--line);transform:translateY(-110%);transition:transform .3s ease;}
-  .tabs.open{transform:translateY(0);}
+    border-bottom:1px solid var(--line);display:none;z-index:50;}
+  .tabs.open{display:flex;}
   .tabs a{border-right:none;border-bottom:1px solid var(--line);padding:16px 24px;}
   .nav-toggle{display:block;}
 }
