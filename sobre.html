@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — Ian Lucas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<div class="frame">
+  <nav class="gutter">
+    <span class="active" data-target="#about">SOBRE</span>
+    <span data-target="#log">TRAJETÓRIA</span>
+  </nav>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">ian<b>_</b>lucas<span style="color:var(--fg-dimmer)">.dev</span></a>
+    <button class="nav-toggle" aria-label="menu">☰</button>
+    <div class="tabs">
+      <a href="index.html"><span class="dot">○</span>index.html</a>
+      <a href="sobre.html" class="active"><span class="dot">●</span>sobre.html</a>
+      <a href="servicos.html"><span class="dot">○</span>servicos.html</a>
+      <a href="contato.html"><span class="dot">○</span>contato.html</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" style="padding-top:100px;">
+      <div class="section-inner">
+        <div class="eyebrow reveal">// sobre.json</div>
+        <h1 class="reveal" style="font-size:clamp(2.2rem,5vw,4rem);max-width:16ch;margin-bottom:40px;">Um desenvolvedor que também pensa em design.</h1>
+
+        <div class="json-card reveal">
+          <div><span class="idx">01</span><span class="k">"nome"</span>: <span class="s">"Ian Lucas"</span>,</div>
+          <div><span class="idx">02</span><span class="k">"função"</span>: <span class="s">"Full Stack Developer"</span>,</div>
+          <div><span class="idx">03</span><span class="k">"foco"</span>: <span class="s">["front-end", "back-end", "UI/UX"]</span>,</div>
+          <div><span class="idx">04</span><span class="k">"filosofia"</span>: <span class="s">"código limpo + interface que faz sentido"</span>,</div>
+          <div><span class="idx">05</span><span class="k">"disponibilidade"</span>: <span class="s">true</span></div>
+        </div>
+
+        <p class="reveal" style="margin-top:40px;max-width:64ch;color:var(--fg-dim);font-size:1.05rem;">
+          Trabalho na ponte entre o que o usuário vê e o que faz o sistema funcionar. Gosto de pegar uma ideia solta e transformar em algo que roda de verdade — com atenção em cada detalhe de estilo, espaçamento e comportamento, não só em fazer "funcionar". Pra mim, um bom projeto é aquele onde o código é sólido por dentro e a interface impressiona por fora.
+        </p>
+      </div>
+    </section>
+
+    <section id="log" style="border-bottom:none;">
+      <div class="section-inner">
+        <div class="eyebrow reveal">git log --author=ian</div>
+        <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:8px;">Como eu trabalho</h2>
+        <div class="log reveal">
+          <div class="log-item">
+            <div class="log-hash">commit a1b2c3d</div>
+            <div class="log-msg">planejamento antes do código</div>
+            <div class="log-desc">Entendo o problema e o objetivo do projeto antes de abrir o editor — isso evita retrabalho e garante que a solução realmente resolve o que precisa.</div>
+          </div>
+          <div class="log-item">
+            <div class="log-hash">commit e4f5g6h</div>
+            <div class="log-msg">design não é enfeite</div>
+            <div class="log-desc">Estilização, espaçamento e hierarquia visual fazem parte da entrega, não são um passo extra opcional.</div>
+          </div>
+          <div class="log-item">
+            <div class="log-hash">commit i7j8k9l</div>
+            <div class="log-msg">comunicação direta</div>
+            <div class="log-desc">Gosto de manter o cliente por dentro do processo, com atualizações claras sobre o que está pronto e o que vem a seguir.</div>
+          </div>
+          <div class="log-item">
+            <div class="log-hash">commit m1n2o3p</div>
+            <div class="log-msg">refino contínuo</div>
+            <div class="log-desc">Depois que o projeto está no ar, continuo de olho em performance, ajustes e melhorias — nada fica largado.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitefoot">
+    <span class="prompt">ian-dev@portfolio:~$ feito por Ian-dev<span class="caret"></span></span>
+    <span>© 2026 Ian Lucas</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

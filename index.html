@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ian Lucas — Full Stack Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<div class="frame">
+  <nav class="gutter">
+    <span class="active" data-target="#hero">HERO</span>
+    <span data-target="#stack">STACK</span>
+    <span data-target="#cta">CONTATO</span>
+  </nav>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">ian<b>_</b>lucas<span style="color:var(--fg-dimmer)">.dev</span></a>
+    <button class="nav-toggle" aria-label="menu">☰</button>
+    <div class="tabs">
+      <a href="index.html" class="active"><span class="dot">●</span>index.html</a>
+      <a href="sobre.html"><span class="dot">○</span>sobre.html</a>
+      <a href="servicos.html"><span class="dot">○</span>servicos.html</a>
+      <a href="contato.html"><span class="dot">○</span>contato.html</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" style="border-bottom:none;padding-bottom:0;">
+      <div class="eyebrow">// bem-vindo ao meu portfólio</div>
+      <h1 class="hero-name">
+        IAN<br>
+        <span class="outline">LUCAS</span>
+      </h1>
+      <p class="hero-sub">
+        <span data-type='["desenvolvedor full stack","interfaces com estilo","código que funciona e impressiona","disponível para novos projetos"]'></span><span class="caret"></span>
+      </p>
+      <div class="availability">
+        <span class="pulse"></span> aberto para novos projetos
+      </div>
+    </section>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>FULL STACK DEVELOPER</span><span>•</span><span>UI / UX DESIGN</span><span>•</span><span>FRONT-END COM ATENÇÃO A DETALHE</span><span>•</span><span>BACK-END SÓLIDO</span><span>•</span>
+        <span>FULL STACK DEVELOPER</span><span>•</span><span>UI / UX DESIGN</span><span>•</span><span>FRONT-END COM ATENÇÃO A DETALHE</span><span>•</span><span>BACK-END SÓLIDO</span><span>•</span>
+      </div>
+    </div>
+
+    <section id="stack">
+      <div class="section-inner">
+        <div class="eyebrow reveal">stack.json</div>
+        <h2 class="reveal" style="font-size:clamp(1.6rem,3vw,2.4rem);max-width:20ch;">Ferramentas que uso pra sair do rascunho pro produto.</h2>
+        <div class="stack-grid reveal">
+          <div>HTML5</div>
+          <div>CSS3 / Sass</div>
+          <div>JavaScript</div>
+          <div>TypeScript</div>
+          <div>React</div>
+          <div>Node.js</div>
+          <div>APIs REST</div>
+          <div>Git / GitHub</div>
+          <div>Figma</div>
+          <div>UI Design</div>
+          <div>Banco de Dados</div>
+          <div>Responsividade</div>
+        </div>
+        <p class="reveal" style="color:var(--fg-dim);font-family:var(--mono);font-size:12px;margin-top:18px;">* stack ilustrativa — ajuste comigo conforme seu setup real</p>
+      </div>
+    </section>
+
+    <section id="cta" style="border-bottom:none;">
+      <div class="section-inner reveal">
+        <div class="eyebrow">próximo passo</div>
+        <p class="big-lead">Quer transformar uma ideia em um produto bem construído?</p>
+        <div class="contact-cta">
+          <a href="contato.html" class="btn magnetic">FALAR COM IAN →</a>
+          <a href="servicos.html" class="btn magnetic" style="border-color:var(--line-bright);">VER SERVIÇOS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitefoot">
+    <span class="prompt">ian-dev@portfolio:~$ feito por Ian-dev<span class="caret"></span></span>
+    <span>© 2026 Ian Lucas</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
