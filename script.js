@@ -21,8 +21,14 @@ document.querySelectorAll('a, button, .magnetic, .env-row').forEach(el=>{
 const toggle = document.querySelector('.nav-toggle');
 const tabs = document.querySelector('.tabs');
 if(toggle){
-  toggle.addEventListener('click', ()=> tabs.classList.toggle('open'));
-  tabs.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>tabs.classList.remove('open')));
+  toggle.addEventListener('click', ()=>{
+    tabs.classList.toggle('open');
+    toggle.classList.toggle('open');
+  });
+  tabs.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+    tabs.classList.remove('open');
+    toggle.classList.remove('open');
+  }));
 }
 
 // ---------- scroll reveal ----------
