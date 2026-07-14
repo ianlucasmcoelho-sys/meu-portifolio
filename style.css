@@ -290,3 +290,63 @@ h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;}
 @keyframes pulse{0%{transform:scale(1);opacity:.7;}100%{transform:scale(2.6);opacity:0;}}
 
 .big-lead{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.25;letter-spacing:-.01em;max-width:16ch;}
+
+/* ========== RESPONSIVE — TABLET ========== */
+@media (max-width:860px){
+  section{padding:80px 24px;}
+  .hero{padding:80px 24px 60px;min-height:80vh;}
+  .hero-name{font-size:clamp(2.6rem,10vw,6rem);}
+  .json-card{padding:24px 20px;font-size:13px;}
+  .stack-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));}
+  .contact-cta{flex-direction:column;}
+  .contact-cta .btn{width:100%;justify-content:center;text-align:center;}
+}
+
+/* ========== RESPONSIVE — MOBILE ========== */
+@media (max-width:560px){
+  section{padding:60px 16px;}
+  .hero{padding:60px 16px 40px;min-height:70vh;}
+  .hero-name{font-size:clamp(2.2rem,13vw,4rem);}
+  .hero-sub{font-size:.85rem;margin-top:18px;}
+
+  header.topbar{padding:0 16px;}
+
+  .marquee-track{font-size:11px;letter-spacing:.03em;}
+  .marquee-track span{margin:0 12px;}
+
+  .eyebrow{font-size:11px;margin-bottom:12px;}
+  h2{font-size:clamp(1.3rem,5vw,1.8rem) !important;}
+
+  .stack-grid{grid-template-columns:repeat(2,1fr);margin-top:24px;}
+  .stack-grid div{padding:16px 14px;font-size:12px;}
+
+  .json-card{padding:20px 16px;font-size:12.5px;line-height:1.7;overflow-x:auto;word-break:break-word;}
+
+  /* services */
+  .svc-item{grid-template-columns:1fr !important;gap:8px;padding:28px 0;}
+  .svc-num{display:none;}
+  .svc-title{font-size:1.2rem;}
+  .svc-desc{font-size:.88rem;}
+  .svc-tags span{font-size:10px;padding:3px 6px;}
+
+  /* contact env block */
+  .env-block{font-size:13px;margin-top:20px;}
+  .env-row{flex-direction:column;align-items:flex-start;gap:6px;padding:16px 18px;}
+  .env-val{text-align:left;font-size:13px;}
+  .env-copy{margin-left:8px;}
+
+  /* buttons */
+  .btn{font-size:12px;padding:12px 20px;width:100%;justify-content:center;text-align:center;}
+  .contact-cta{gap:10px;margin-top:36px;}
+
+  /* footer */
+  footer.sitefoot{padding:20px 16px;font-size:11px;flex-direction:column;gap:6px;}
+
+  .big-lead{font-size:clamp(1.3rem,6vw,2rem);}
+  .availability{font-size:11px;margin-top:16px;}
+
+  /* log items */
+  .log-item{padding:18px 0 18px 24px;}
+  .log-msg{font-size:1.05rem;}
+  .log-desc{font-size:.88rem;}
+}
